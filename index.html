@@ -21,30 +21,33 @@
             <a href="index.html"><img src="images/logo.png" alt="Логотип" class="h-24 w-24 object-contain cursor-pointer"></a>
             <div class="text-white">
                 <h1 class="text-3xl md:text-5xl font-bold tracking-tight">ДЗЕРА ОЛЕНА</h1>
-                <p class="text-sm md:text-lg opacity-90 mt-1 hidden md:block">Приватний нотаріус Львівського міського нотаріального округу</p>
+                <p class="text-sm md:text-lg opacity-90 mt-1 hidden md:block">Приватний нотаріус ЛМНО</p>
                 <p class="text-sm opacity-90 mt-1 md:hidden">Приватний нотаріус</p>
             </div>
         </div>
     </div>
 
-  <!-- МЕНЮ -->
-    <nav class="bg-white border-b border-gray-300">
-    <!-- Кнопка МЕНЮ (видима тільки на мобільних) -->
-    <button onclick="toggleMenu()" class="md:hidden w-full bg-gray-600 text-white font-bold py-4 px-6 flex justify-center items-center gap-2 text-xl shadow-md">
-        ☰ Меню
-    </button>
+  <nav class="bg-white border-b border-gray-200">
+    <!-- Кнопка МЕНЮ (для мобільних) -->
+    <div class="md:hidden flex justify-center py-4 border-b">
+        <button onclick="toggleMenu()" class="flex items-center gap-2 font-bold text-gray-700 text-lg uppercase tracking-wider">
+            ☰ МЕНЮ
+        </button>
+    </div>
 
     <!-- Самі посилання -->
-    <div id="nav-links" class="hidden md:flex md:justify-center md:items-center bg-white border-b">
-        <div class="flex flex-col md:flex-row w-full max-w-4xl font-semibold text-gray-700 uppercase tracking-wider text-sm">
-            <a href="index.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Про нотаріуса</a>
+    <div id="nav-links" class="hidden md:flex md:justify-center md:items-center py-2 bg-white">
+        <div class="flex flex-col md:flex-row w-full max-w-4xl font-semibold text-gray-700 uppercase tracking-wider text-xs md:text-sm text-center">
             
-            <!-- Посвідчення (з підменю) -->
-            <div class="border-b md:border-none">
-                <div onclick="toggleSubmenu()" class="py-4 px-6 hover:bg-gray-100 hover:text-red-700 transition cursor-pointer flex justify-between items-center">
+            <a href="index.html" class="py-4 px-6 hover:text-red-700 transition border-b md:border-none">Про нотаріуса</a>
+            
+            <!-- Посвідчення -->
+            <div class="relative group border-b md:border-none">
+                <div onclick="toggleSubmenu()" class="flex items-center justify-center gap-1 cursor-pointer py-4 px-6 hover:text-red-700 transition">
                     Посвідчення документів ▾
                 </div>
-                <div id="submenu" class="hidden md:absolute md:top-full md:left-0 md:shadow-xl md:w-64 md:z-50 md:bg-white md:border border-gray-100 bg-gray-50">
+                <!-- Меню (на ПК випадає, на мобільному стає частиною списку) -->
+                <div id="submenu" class="hidden md:absolute md:left-0 md:top-full md:shadow-xl md:w-64 z-50 md:bg-white md:border border-gray-100 bg-gray-50 text-left">
                     <a href="kopii.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Засвідчення вірності копій</a>
                     <a href="dovirnist.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Довіреність</a>
                     <a href="zayava.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Заява-згода батьків</a>
@@ -55,21 +58,17 @@
                 </div>
             </div>
 
-            <a href="spadshchyna.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Оформлення спадщини</a>
-            <a href="rekvizyty.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Реквізити</a>
-            <a href="contacts.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Контакти</a>
+            <a href="spadshchyna.html" class="py-4 px-6 border-b md:border-none hover:text-red-700 transition">Оформлення спадщини</a>
+            <a href="rekvizyty.html" class="py-4 px-6 border-b md:border-none hover:text-red-700 transition">Реквізити</a>
+            <a href="contacts.html" class="py-4 px-6 hover:text-red-700 transition">Контакти</a>
         </div>
     </div>
 </nav>
 
-<!-- Скрипт для відкриття меню -->
+<!-- Скрипт (потрібно додати один раз в кінці body) -->
 <script>
-    function toggleMenu() {
-        document.getElementById('nav-links').classList.toggle('hidden');
-    }
-    function toggleSubmenu() {
-        document.getElementById('submenu').classList.toggle('hidden');
-    }
+    function toggleMenu() { document.getElementById('nav-links').classList.toggle('hidden'); }
+    function toggleSubmenu() { document.getElementById('submenu').classList.toggle('hidden'); }
 </script>
 
 
