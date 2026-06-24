@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Дзера Олена</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: sans-serif; }
+        .group .dropdown-menu { display: none; padding-top: 15px; }
+        .group:hover .dropdown-menu { display: block; }
+    </style>
+</head>
+<body class="bg-[#f7f7f7]">
+
+    <!-- HERO -->
+    <div class="h-[350px] w-full bg-cover bg-center relative flex items-end pb-6" style="background-image: url('images/photo_head.jpg');">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 max-w-4xl mx-auto w-full px-4 flex items-center gap-6">
+            <a href="index.html"><img src="images/logo.png" alt="Логотип" class="h-24 w-24 object-contain cursor-pointer"></a>
+            <div class="text-white">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">ДЗЕРА ОЛЕНА</h1>
+                <p class="text-lg opacity-90 mt-1">Приватний нотаріус Львівського міського нотаріального округу</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- МЕНЮ -->
+    <nav class="bg-white border-b border-gray-200 py-6">
+        <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-6 font-semibold text-gray-700 uppercase text-xs md:text-sm tracking-wider">
+            <a href="index.html" class="hover:text-red-700 transition">Про нотаріуса</a>
+            
+            <div class="relative group">
+                <div class="flex items-center gap-1">
+                    <a href="posvidchennya.html" class="hover:text-red-700 transition">Посвідчення документів</a>
+                    <span class="cursor-default text-gray-700">▾</span>
+                </div>
+                <div class="dropdown-menu absolute left-0 hidden shadow-xl w-64 z-50">
+                    <div class="bg-white border border-gray-100 py-2">
+                        <a href="kopii.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення вірності копій</a>
+                        <a href="dovirnist.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Довіреність</a>
+                        <a href="zayava.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заява-згода батьків</a>
+                        <a href="pidpysy.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення підписів</a>
+                        <a href="dohovory.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення договорів</a>
+                        <a href="fakty.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення фактів</a>
+                        <a href="zapovit.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заповіт</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="spadshchyna.html" class="hover:text-red-700 transition">Оформлення спадщини</a>
+            <a href="rekvizyty.html" class="hover:text-red-700 transition">Реквізити</a>
+            <a href="contacts.html" class="text-red-700 transition">Контакти</a>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="max-w-2xl mx-auto bg-white p-8 md:p-16 my-8 shadow-sm text-gray-800 leading-relaxed">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">Приватний нотаріус Олена ДЗЕРА</h1>
+        </div>
+
+        <img src="images/photo_notary.jpg" alt="Олена Дзера" class="w-full rounded shadow-md mb-8">
+
+        <!-- Адреса і графік -->
+        <div class="space-y-4 mb-8">
+            <p class="font-bold text-lg">Адреса:</p>
+            <p class="text-lg">м. Львів, вул. Архипенка, 28</p>
+            <p class="font-bold text-lg pt-2">Графік роботи:</p>
+            <p class="text-lg">пн-пт: 09:30 – 18:30</p>
+            <p class="text-lg">сб: за домовленістю</p>
+        </div>
+
+        <!-- Кнопка запису + Телефони + Месенджери -->
+        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-red-700 space-y-4 mb-8">
+            <a href="https://linktr.ee/notabene.notary" target="_blank" class="block w-full bg-red-700 text-white text-center font-bold py-4 px-6 rounded hover:bg-red-800 transition shadow-lg text-lg">
+                ЗАПИС ОНЛАЙН
+            </a>
+            <p class="font-bold text-xl pt-4">Запис на безкоштовну консультацію за телефонами:</p>
+            <a href="tel:+380972761055" class="block text-2xl font-bold hover:text-red-700 transition">+380 (97) 276 10 55</a>
+            <a href="tel:+380961707370" class="block text-2xl font-bold hover:text-red-700 transition">+380 (96) 170 73 70</a>
+            
+            
+        </div>
+
+        <!-- Мапа -->
+        <div class="mb-12">
+            <a href="https://www.google.com/maps/search/?api=1&query=Львів+вул.+Архипенка+28" target="_blank" class="block group">
+                <img src="images/map.png" alt="Мапа" class="w-full rounded shadow-md hover:opacity-90 transition mb-4">
+                <div class="w-full bg-gray-100 text-gray-800 font-bold py-4 px-6 rounded border border-gray-300 text-center hover:bg-gray-200 transition shadow-sm text-lg">
+                    ДИВИТИСЬ НА МАПІ
+                </div>
+            </a>
+        </div>
+
+        <!-- Логотип -->
+        <div class="text-center mt-12 border-t pt-8">
+            <img src="images/logo.png" alt="Логотип" class="w-48 mx-auto object-contain">
+        </div>
+
+    </main>
+
+</body>
+</html>

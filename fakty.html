@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посвідчення фактів - Дзера Олена</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: sans-serif; }
+        /* "Міст", який тримає меню при наведенні */
+        .group .dropdown-menu { display: none; padding-top: 15px; }
+        .group:hover .dropdown-menu { display: block; }
+    </style>
+</head>
+<body class="bg-[#f7f7f7]">
+
+    <!-- HERO -->
+    <div class="h-[350px] w-full bg-cover bg-center relative flex items-end pb-6" style="background-image: url('images/photo_head.jpg');">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 max-w-4xl mx-auto w-full px-4 flex items-center gap-6">
+            <a href="index.html"><img src="images/logo.png" alt="Логотип" class="h-24 w-24 object-contain cursor-pointer"></a>
+            <div class="text-white">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">ДЗЕРА ОЛЕНА</h1>
+                <p class="text-lg opacity-90 mt-1">Приватний нотаріус Львівського міського нотаріального округу</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- МЕНЮ -->
+    <nav class="bg-white border-b border-gray-200 py-6">
+        <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-6 font-semibold text-gray-700 uppercase text-xs md:text-sm tracking-wider">
+            <a href="index.html" class="hover:text-red-700 transition">Про нотаріуса</a>
+            
+            <div class="relative group">
+                <div class="flex items-center gap-1">
+                    <a href="posvidchennya.html" class="hover:text-red-700 transition">Посвідчення документів</a>
+                    <span class="cursor-default text-gray-700">▾</span>
+                </div>
+                <div class="dropdown-menu absolute left-0 hidden shadow-xl w-64 z-50">
+                    <div class="bg-white border border-gray-100 py-2">
+                        <a href="kopii.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення вірності копій</a>
+                        <a href="dovirnist.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Довіреність</a>
+                        <a href="zayava.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заява-згода батьків</a>
+                        <a href="pidpysy.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення підписів</a>
+                        <a href="dohovory.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення договорів</a>
+                        <a href="fakty.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення фактів</a>
+                        <a href="zapovit.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заповіт</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="spadshchyna.html" class="hover:text-red-700 transition">Оформлення спадщини</a>
+            <a href="rekvizyty.html" class="hover:text-red-700 transition">Реквізити</a>
+            <a href="contacts.html" class="hover:text-red-700 transition">Контакти</a>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="max-w-4xl mx-auto bg-white p-8 md:p-16 my-8 shadow-sm text-gray-800 leading-relaxed">
+        <h2 class="text-3xl font-bold mb-6 border-b border-gray-100 pb-4">Посвідчення фактів</h2>
+        
+        <div class="space-y-6 text-lg">
+            <h3 class="font-bold text-xl text-red-800">Посвідчення факту, що фізична особа є живою або перебуває в певному місці</h3>
+            <p>Звернення до нотаріуса за посвідченням факту, що фізична особа є живою, що фізична особа знаходиться у певному місці, видачі свідоцтва на підтвердження цих фактів.</p>
+
+            <ul class="list-disc ml-6 space-y-3">
+                <li>Нотаріус за усним зверненням фізичної особи посвідчує факт, що фізична особа є живою.</li>
+                <li>Нотаріус за усним зверненням фізичної особи посвідчує факт перебування її в певному місці.</li>
+                <li>Посвідчення факту, що фізична особа є живою, та факту перебування її в певному місці проводиться як при явці фізичної особи до нотаріуса, так і поза приміщенням, що є робочим місцем нотаріуса.</li>
+                <li>Факти, що малолітня дитина, недієздатна фізична особа є живою чи перебуває в певному місці, посвідчуються за усним зверненням її законних представників (батьків, усиновлювачів, опікуна).</li>
+                <li>Факти, що неповнолітня дитина, фізична особа, цивільна дієздатність якої обмежена, є живою чи перебуває в певному місці, посвідчуються за їх усним зверненням та за згодою на це законних представників (батьків, усиновлювачів, піклувальників), викладеною з дотриманням вимог Порядку вчинення нотаріальних дій нотаріусами України щодо посвідчення правочинів за участю неповнолітніх, а також осіб, над якими встановлено піклування.</li>
+                <li>На підтвердження факту, що фізична особа є живою, та факту перебування фізичної особи в певному місці нотаріус видає заінтересованим особам, щодо яких було встановлено ці факти, відповідні свідоцтва.</li>
+            </ul>
+
+            <h3 class="font-bold text-xl text-red-800 pt-6">Необхідні документи:</h3>
+            <ul class="list-decimal ml-6 space-y-3">
+                <li>Паспорт (звертаємо Вашу увагу на наявність в паспорті вклеєних фотографій при досягненні особою 25-річного або 45-річного віку);</li>
+                <li>Реєстраційний номер облікової картки платника податків;</li>
+                <li>Для неповнолітніх – згода на посвідчення факту його законних представників.</li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>

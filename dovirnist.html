@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Довіреність - Дзера Олена</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: sans-serif; }
+        /* "Міст", який тримає меню при наведенні */
+        .group .dropdown-menu { display: none; padding-top: 15px; }
+        .group:hover .dropdown-menu { display: block; }
+    </style>
+</head>
+<body class="bg-[#f7f7f7]">
+
+    <!-- HERO -->
+    <div class="h-[350px] w-full bg-cover bg-center relative flex items-end pb-6" style="background-image: url('images/photo_head.jpg');">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 max-w-4xl mx-auto w-full px-4 flex items-center gap-6">
+            <a href="index.html">
+    <img src="images/logo.png" alt="Логотип" class="h-24 w-24 object-contain cursor-pointer">
+</a>
+            <div class="text-white">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">ДЗЕРА ОЛЕНА</h1>
+                <p class="text-lg opacity-90 mt-1">Приватний нотаріус Львівського міського нотаріального округу</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- МЕНЮ -->
+    <nav class="bg-white border-b border-gray-200 py-6">
+        <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-6 font-semibold text-gray-700 uppercase text-xs md:text-sm tracking-wider">
+            <a href="index.html" class="hover:text-red-700 transition">Про нотаріуса</a>
+            
+            <div class="relative group">
+                <div class="flex items-center gap-1">
+                    <a href="posvidchennya.html" class="text-red-700 transition">Посвідчення документів</a>
+                    <span class="cursor-default text-gray-700">▾</span>
+                </div>
+                <div class="dropdown-menu absolute left-0 hidden shadow-xl w-64 z-50">
+                    <div class="bg-white border border-gray-100 py-2">
+                        <a href="kopii.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення вірності копій</a>
+                        <a href="dovirnist.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Довіреність</a>
+                        <a href="zayava.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заява-згода батьків</a>
+                        <a href="pidpysy.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення підписів</a>
+                        <a href="dohovory.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення договорів</a>
+                        <a href="fakty.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення фактів</a>
+                        <a href="zapovit.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заповіт</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="spadshchyna.html" class="hover:text-red-700 transition">Оформлення спадщини</a>
+            <a href="rekvizyty.html" class="hover:text-red-700 transition">Реквізити</a>
+            <a href="contacts.html" class="hover:text-red-700 transition">Контакти</a>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="max-w-4xl mx-auto bg-white p-8 md:p-16 my-8 shadow-sm text-gray-800 leading-relaxed">
+        <h2 class="text-3xl font-bold mb-6 border-b border-gray-100 pb-4">Довіреність</h2>
+        
+        <div class="space-y-8 text-lg">
+            <img src="images/dovirenist.jpg" alt="Довіреність" class="w-full h-auto rounded shadow-md">
+            
+            <p class="font-bold text-xl">Необхідні документи для посвідчення довіреності:</p>
+
+            <div>
+                <h3 class="font-bold text-xl text-red-800 mb-3">Для фізичних осіб:</h3>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>Паспорт (звертаємо Вашу увагу на наявність в паспорті вклеєних фотографій при досягненні особою 25-річного або 45-річного віку);</li>
+                    <li>Довідка про місце проживання (у разі якщо паспорт у формі ID картки);</li>
+                    <li>Реєстраційний номер облікової картки платника податків.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-xl text-red-800 mb-3">Для юридичних осіб:</h3>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>Виписка з Єдиного державного реєстру юридичних осіб та фізичних осіб-підприємців (свідоцтво про державну реєстрацію);</li>
+                    <li>Статут;</li>
+                    <li>Протокол (рішення, наказ) про обрання керівника;</li>
+                    <li>Паспорт керівника;</li>
+                    <li>Витяг з Єдиного державного реєстру, виданий не пізніше 1 місяця до дня вчинення нотаріальної дії;</li>
+                    <li>Печатка юридичної особи;</li>
+                    <li>Якщо від імені юридичної особи діє представник за довіреністю – довіреність на представника, паспорт представника.</li>
+                </ul>
+            </div>
+
+            <p class="bg-gray-50 p-6 border-l-4 border-gray-300 italic">
+                Відомості про представника записуються зі слів довірителя, можна надати фотокопію паспорта представника задля уникнення помилок в описі. Вся інша інформація, стосовно змісту та призначення довіреності, записується зі слів довірителя.
+            </p>
+
+            <div>
+                <h3 class="font-bold text-xl text-red-800 mb-3">Необхідні документи для посвідчення довіреності в порядку передоручення:</h3>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>Основна довіреність;</li>
+                    <li>Представник (фізична особа), який діє на підставі основної довіреності – паспорт та реєстраційний номер облікової картки платника податків;</li>
+                    <li>Якщо основна довіреність видана від імені юридичної особи, представнику необхідно надати свій паспорт, реєстраційний номер облікової картки платника податків та виписку з ЄДР (виданий не пізніше 1 місяця до моменту вчинення нотаріальної дії), статут, печатку.</li>
+                </ul>
+            </div>
+
+            <div class="border-t pt-8">
+                <h3 class="font-bold text-2xl mb-4">Що необхідно знати про довіреність?</h3>
+                <ol class="list-decimal ml-6 space-y-3">
+                    <li>Довіреність неможливо продовжити. Після закінчення її строку, якщо буде потреба, посвідчується нова довіреність.</li>
+                    <li>В одній довіреності може бути зазначено кілька повірених (представників).</li>
+                    <li>Довіреність у порядку передоручення не може надавати більше повноважень ніж передбачено в основній довіреності.</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

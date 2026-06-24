@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посвідчення документів - Дзера Олена</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: sans-serif; }
+        /* "Міст", який тримає меню при наведенні */
+        .group .dropdown-menu { display: none; padding-top: 15px; }
+        .group:hover .dropdown-menu { display: block; }
+    </style>
+</head>
+<body class="bg-[#f7f7f7]">
+
+    <div class="h-[350px] w-full bg-cover bg-center relative flex items-end pb-6" style="background-image: url('images/photo_head.jpg');">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 max-w-4xl mx-auto w-full px-4 flex items-center gap-6">
+            <a href="index.html">
+    <img src="images/logo.png" alt="Логотип" class="h-24 w-24 object-contain cursor-pointer">
+</a>
+            <div class="text-white">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">ДЗЕРА ОЛЕНА</h1>
+                <p class="text-lg opacity-90 mt-1">Приватний нотаріус Львівського міського нотаріального округу</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white border-b border-gray-200 py-6">
+        <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-6 font-semibold text-gray-700 uppercase text-xs md:text-sm tracking-wider">
+            <a href="index.html" class="hover:text-red-700 transition">Про нотаріуса</a>
+            
+            <div class="relative group">
+                <div class="flex items-center gap-1">
+                    <a href="posvidchennya.html" class="text-red-700 transition">Посвідчення документів</a>
+                    <span class="cursor-default text-gray-700">▾</span>
+                </div>
+                <div class="dropdown-menu absolute left-0 hidden shadow-xl w-64 z-50">
+                    <div class="bg-white border border-gray-100 py-2">
+                        <a href="kopii.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення вірності копій</a>
+                        <a href="dovirnist.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Довіреність</a>
+                        <a href="zayava.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заява-згода батьків</a>
+                        <a href="pidpysy.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення підписів</a>
+                        <a href="dohovory.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення договорів</a>
+                        <a href="fakty.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення фактів</a>
+                        <a href="zapovit.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заповіт</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="spadshchyna.html" class="hover:text-red-700 transition">Оформлення спадщини</a>
+            <a href="rekvizyty.html" class="hover:text-red-700 transition">Реквізити</a>
+            <a href="contacts.html" class="hover:text-red-700 transition">Контакти</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto bg-white p-8 md:p-16 my-8 shadow-sm text-gray-800 leading-relaxed">
+        <h2 class="text-3xl font-bold mb-6 border-b border-gray-100 pb-4">Посвідчення документів</h2>
+        <img src="images/authority.jpg" alt="Посвідчення документів" class="w-full h-auto rounded shadow-md">
+    </main>
+
+</body>
+</html>
