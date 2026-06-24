@@ -27,7 +27,9 @@
         </div>
     </div>
 
+    <!-- МЕНЮ -->
   <nav class="bg-white border-t border-b border-gray-300">
+      
     <!-- Кнопка МЕНЮ (для мобільних) -->
     <div class="md:hidden flex justify-center py-4 border-b border-gray-300">
         <button onclick="toggleMenu()" class="flex items-center gap-2 font-bold text-gray-700 text-lg uppercase tracking-wider">
@@ -64,11 +66,6 @@
     </div>
 </nav>
 
-<!-- Скрипт (потрібно додати в кінці body на кожній сторінці, якщо його ще немає) -->
-<script>
-    function toggleMenu() { document.getElementById('nav-links').classList.toggle('hidden'); }
-    function toggleSubmenu() { document.getElementById('submenu').classList.toggle('hidden'); }
-</script>
 
     <!-- MAIN -->
     <main class="max-w-4xl mx-auto bg-white p-8 md:p-16 my-8 shadow-sm text-gray-800 leading-relaxed">
@@ -97,6 +94,12 @@
             </a>
         </div>
     </main>
+
+    <!-- Скрипт (потрібно додати в кінці body на кожній сторінці, якщо його ще немає) -->
+<script>
+    function toggleMenu() { document.getElementById('nav-links').classList.toggle('hidden'); }
+    function toggleSubmenu() { document.getElementById('submenu').classList.toggle('hidden'); }
+</script>
 
 </body>
 </html>
