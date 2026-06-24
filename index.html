@@ -7,38 +7,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: sans-serif; }
-        /* Ми робимо невидимий місток, щоб меню не тікало */
+        /* "Міст", який тримає меню при наведенні */
         .group .dropdown-menu { display: none; padding-top: 15px; }
         .group:hover .dropdown-menu { display: block; }
     </style>
 </head>
 <body class="bg-[#f7f7f7]">
 
+    <!-- HERO -->
     <div class="h-[350px] w-full bg-cover bg-center relative flex items-end pb-6" style="background-image: url('images/photo_head.jpg');">
         <div class="absolute inset-0 bg-black/30"></div>
         <div class="relative z-10 max-w-4xl mx-auto w-full px-4 flex items-center gap-6">
-           <a href="index.html">
-    <img src="images/logo.png" alt="Логотип" class="h-24 w-24 object-contain cursor-pointer">
-</a>
+            <a href="index.html"><img src="images/logo.png" alt="Логотип" class="h-24 w-24 object-contain cursor-pointer"></a>
             <div class="text-white">
-                <h1 class="text-4xl md:text-5xl font-bold tracking-tight">ДЗЕРА ОЛЕНА</h1>
-                <p class="text-lg opacity-90 mt-1">Приватний нотаріус Львівського міського нотаріального округу</p>
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight">ДЗЕРА ОЛЕНА</h1>
+                <p class="text-sm md:text-lg opacity-90 mt-1 hidden md:block">Приватний нотаріус Львівського міського нотаріального округу</p>
+                <p class="text-sm opacity-90 mt-1 md:hidden">Приватний нотаріус</p>
             </div>
         </div>
     </div>
 
-    <nav class="bg-white border-b border-gray-200 py-6">
-        <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-6 font-semibold text-gray-700 uppercase text-xs md:text-sm tracking-wider">
-            <a href="index.html" class="text-red-700">Про нотаріуса</a>
-            
-            <div class="relative group">
-                <div class="flex items-center gap-1">
-                    <a href="posvidchennya.html" class="hover:text-red-700 transition">Посвідчення документів</a>
-                    <span class="cursor-default text-gray-700">▾</span>
-                </div>
-                <!-- Збільшений відступ та "padding-top" (в стилях) тримають меню -->
-                <div class="dropdown-menu absolute left-0 hidden bg-white shadow-xl w-64 border border-gray-100 z-50">
-                    <div class="bg-white border border-gray-100 py-2">
+    <!-- МЕНЮ -->
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <button onclick="document.getElementById('nav-links').classList.toggle('hidden')" class="md:hidden text-2xl p-2 border rounded">☰</button>
+            <div id="nav-links" class="hidden md:flex flex-col md:flex-row gap-4 w-full md:w-auto font-semibold text-gray-700 uppercase text-xs md:text-sm tracking-wider">
+                <a href="index.html" class="text-red-700 py-2">Про нотаріуса</a>
+                
+                <div class="relative group">
+                    <div class="flex items-center gap-1 cursor-pointer py-2">
+                        <a href="posvidchennya.html" class="hover:text-red-700 transition">Посвідчення документів</a>
+                        <span class="text-gray-700">▾</span>
+                    </div>
+                    <div class="dropdown-menu md:absolute left-0 hidden shadow-xl w-64 z-50 py-2 bg-white border border-gray-100">
                         <a href="kopii.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення вірності копій</a>
                         <a href="dovirnist.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Довіреність</a>
                         <a href="zayava.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заява-згода батьків</a>
@@ -48,24 +49,22 @@
                         <a href="zapovit.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заповіт</a>
                     </div>
                 </div>
+
+                <a href="spadshchyna.html" class="hover:text-red-700 py-2">Оформлення спадщини</a>
+                <a href="rekvizyty.html" class="hover:text-red-700 py-2">Реквізити</a>
+                <a href="contacts.html" class="hover:text-red-700 py-2">Контакти</a>
             </div>
-            <a href="spadshchyna.html" class="hover:text-red-700 transition">Оформлення спадщини</a>
-            <a href="rekvizyty.html" class="hover:text-red-700 transition">Реквізити</a>
-            <a href="contacts.html" class="hover:text-red-700 transition">Контакти</a>
         </div>
     </nav>
 
+    <!-- MAIN -->
     <main class="max-w-4xl mx-auto bg-white p-8 md:p-16 my-8 shadow-sm text-gray-800 leading-relaxed">
+        
         <h2 class="text-3xl font-bold mb-6 border-b border-gray-100 pb-4">Про нотаріуса</h2>
         <div class="text-lg space-y-6">
             <img src="images/notary.jpg" alt="Дзера Олена" class="float-right ml-6 mb-4 w-64 rounded shadow-md">
             <p><strong>Дзера Олена Сергіївна</strong>, приватний нотаріус Львівського міського нотаріального округу — кваліфікований спеціаліст зі стажем більше 20 років у сфері права, яка забезпечить конфіденційність та оперативність виконання нотаріальних послуг.</p>
             
-            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-red-700">
-                <p class="font-bold text-xl mb-2">Запис на безкоштовну консультацію</p>
-                <p>Звертайтесь за телефонами, вказаними у розділі Контакти.</p>
-            </div>
-
             <p>Нотаріус надає широкий спектр нотаріальних послуг, зокрема:</p>
             <ul class="list-disc ml-6 space-y-2">
                 <li>посвідчення договорів;</li>
@@ -77,6 +76,14 @@
                 <li>та інші.</li>
             </ul>
         </div>
+
+        <!-- Кнопка запису -->
+        <div class="text-center mt-10">
+            <a href="https://linktr.ee/notabene.notary" target="_blank" class="inline-block bg-red-700 text-white font-bold py-4 px-8 rounded shadow-lg hover:bg-red-800 transition text-lg">
+                Запис на безкоштовну консультацію
+            </a>
+        </div>
     </main>
+
 </body>
 </html>
