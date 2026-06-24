@@ -28,34 +28,49 @@
     </div>
 
   <!-- МЕНЮ -->
-    <nav class="bg-white border-b border-gray-200">
-        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-            <button onclick="document.getElementById('nav-links').classList.toggle('hidden')" class="md:hidden text-2xl p-2 border rounded">☰</button>
-            <div id="nav-links" class="hidden md:flex flex-col md:flex-row gap-4 w-full md:w-auto font-semibold text-gray-700 uppercase text-xs md:text-sm tracking-wider">
-                <a href="index.html" class="text-red-700 py-2">Про нотаріуса</a>
-                
-                <div class="relative group">
-                    <div class="flex items-center gap-1 cursor-pointer py-2">
-                        <a href="posvidchennya.html" class="hover:text-red-700 transition">Посвідчення документів</a>
-                        <span class="text-gray-700">▾</span>
-                    </div>
-                    <div class="dropdown-menu md:absolute left-0 hidden shadow-xl w-64 z-50 py-2 bg-white border border-gray-100">
-                        <a href="kopii.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення вірності копій</a>
-                        <a href="dovirnist.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Довіреність</a>
-                        <a href="zayava.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заява-згода батьків</a>
-                        <a href="pidpysy.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Засвідчення підписів</a>
-                        <a href="dohovory.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення договорів</a>
-                        <a href="fakty.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Посвідчення фактів</a>
-                        <a href="zapovit.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-red-700">Заповіт</a>
-                    </div>
-                </div>
+    <nav class="bg-white border-b border-gray-300">
+    <!-- Кнопка МЕНЮ (видима тільки на мобільних) -->
+    <button onclick="toggleMenu()" class="md:hidden w-full bg-gray-600 text-white font-bold py-4 px-6 flex justify-center items-center gap-2 text-xl shadow-md">
+        ☰ Меню
+    </button>
 
-                <a href="spadshchyna.html" class="hover:text-red-700 py-2">Оформлення спадщини</a>
-                <a href="rekvizyty.html" class="hover:text-red-700 py-2">Реквізити</a>
-                <a href="contacts.html" class="hover:text-red-700 py-2">Контакти</a>
+    <!-- Самі посилання -->
+    <div id="nav-links" class="hidden md:flex md:justify-center md:items-center bg-white border-b">
+        <div class="flex flex-col md:flex-row w-full max-w-4xl font-semibold text-gray-700 uppercase tracking-wider text-sm">
+            <a href="index.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Про нотаріуса</a>
+            
+            <!-- Посвідчення (з підменю) -->
+            <div class="border-b md:border-none">
+                <div onclick="toggleSubmenu()" class="py-4 px-6 hover:bg-gray-100 hover:text-red-700 transition cursor-pointer flex justify-between items-center">
+                    Посвідчення документів ▾
+                </div>
+                <div id="submenu" class="hidden md:absolute md:top-full md:left-0 md:shadow-xl md:w-64 md:z-50 md:bg-white md:border border-gray-100 bg-gray-50">
+                    <a href="kopii.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Засвідчення вірності копій</a>
+                    <a href="dovirnist.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Довіреність</a>
+                    <a href="zayava.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Заява-згода батьків</a>
+                    <a href="pidpysy.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Засвідчення підписів</a>
+                    <a href="dohovory.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Посвідчення договорів</a>
+                    <a href="fakty.html" class="block px-8 py-4 border-b hover:bg-gray-100 hover:text-red-700">Посвідчення фактів</a>
+                    <a href="zapovit.html" class="block px-8 py-4 hover:bg-gray-50 hover:text-red-700">Заповіт</a>
+                </div>
             </div>
+
+            <a href="spadshchyna.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Оформлення спадщини</a>
+            <a href="rekvizyty.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Реквізити</a>
+            <a href="contacts.html" class="py-4 px-6 border-b md:border-none hover:bg-gray-100 hover:text-red-700">Контакти</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<!-- Скрипт для відкриття меню -->
+<script>
+    function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('hidden');
+    }
+    function toggleSubmenu() {
+        document.getElementById('submenu').classList.toggle('hidden');
+    }
+</script>
 
 
     <!-- MAIN -->
